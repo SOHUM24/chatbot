@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inputField.addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
       let input = inputField.value;
-      inputField.value = "";
+      inputField.value = " ";
       output(input);
     }
   });
@@ -31,9 +31,7 @@ function output(input) {
     product = compare(prompts, replies, text);
   } else if (text.match(/thank/gi)) {
     product = "You're welcome!"
-  } else if (text.match(/(corona|covid|virus)/gi)) {
-    // If no match, check if message contains `coronavirus`
-    product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
+
   } else {
     // If all else fails: random alternative
     product = alternative[Math.floor(Math.random() * alternative.length)];
@@ -43,12 +41,12 @@ function output(input) {
   addChat(input, product);
 }
 
-function compare(promptsArray, repliesArray, string) {
+function compare(prompts, repliesArray, string) {
   let reply;
   let replyFound = false;
-  for (let x = 0; x < promptsArray.length; x++) {
-    for (let y = 0; y < promptsArray[x].length; y++) {
-      if (promptsArray[x][y] === string) {
+  for (let x = 0; x < prompts.length; x++) {
+    for (let y = 0; y < prompts[x].length; y++) {
+      if (prompts[x][y] === string) {
         let replies = repliesArray[x];
         reply = replies[Math.floor(Math.random() * replies.length)];
         replyFound = true;

@@ -1,63 +1,57 @@
 // Options the user could type in
 const prompts = [
+  //1
   ["hi", "hey", "hello", "good morning", "good afternoon"],
-  ["how are you", "how is life", "how are things"],
-  ["what are you doing", "what is going on", "what is up"],
-  ["how old are you"],
+  //2
+  ["where is Attendance Info","Where Attendance","Where can I find my Attendance records", "Where are Attendance Records"]
+  //3
+  ["Who created you?", "what is your name"],
+  //4
   ["who are you", "are you human", "are you bot", "are you human or bot"],
-  ["who created you", "who made you"],
-  [
-    "your name please",
-    "your name",
-    "may i know your name",
-    "what is your name",
-    "what call yourself"
-  ],
-  ["i love you"],
-  ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
-  ["bad", "bored", "tired"],
-  ["help me", "tell me story", "tell me joke"],
+  //5
+  ["Where can I find Study material for My course", "Study material ","Books","pdf","Mcq's","Mcq pdfs"],
+  //6
+  ["where is notice board","where can I found latest news","where NoticeBoard","where is Notice Board"],
+  //7
+  ["how can I reset my passwod?","how to avail Forgot password","Whom to contact to reset my password?"],
+  //8
   ["ah", "yes", "ok", "okay", "nice"],
+  //9
   ["bye", "good bye", "goodbye", "see you later"],
-  ["what should i eat today"],
+  //11
   ["bro"],
-  ["what", "why", "how", "where", "when"],
+  //12
   ["no","not sure","maybe","no thanks"],
+  //13
   [""],
-  ["haha","ha","lol","hehe","funny","joke"]
+
 ]
 
-// Possible responses, in corresponding order
+// order wise responses
 
 const replies = [
-  ["Hello!", "Hi!", "Hey!", "Hi there!","Howdy"],
+  //1
+  ["Hello!, Welcome to Sinhgad College SE ERP website ", "Hi there!,Chat-BOT here","Howdy!, How can I help you?"],
+  //2
   [
-    "Fine... how are you?",
-    "Pretty well, how are you?",
-    "Fantastic, how are you?"
+    "You can find the attendance tab in the navigation bar"
   ],
-  [
-    "Nothing much",
-    "About to go to sleep",
-    "Can you guess?",
-    "I don't know actually"
-  ],
-  ["I am infinite"],
+  //3
+  ["I am Promethiuem and created by Team Error 505"],
+  //4
   ["I am just a bot", "I am a bot. What are you?"],
-  ["The one true God, JavaScript"],
-  ["I am nameless", "I don't have a name"],
-  ["I love you too", "Me too"],
-  ["Have you ever felt bad?", "Glad to hear it"],
-  ["Why?", "Why? You shouldn't!", "Try watching TV"],
-  ["What about?", "Once upon a time..."],
-  ["Tell me a story", "Tell me a joke", "Tell me about yourself"],
+  //
+  ["You can get all available books,Pdf's,Mcq pdfs in course material section\nplease refer to course material section in navigation bar\nYou can access the notice board by clickimg on notice board section on the navigation bar\nTo reset your password contact either on of management team members or the admin(Your Roll No maybe your Password Please check\nyour Roll No is your Password if the issue is not resolves yet please contact us!\nfor Queries Administrator contact no is:XXXXXXXXXXXX,\n Support team MAil: abc@gmail.com  "],
+  //8
+  ["Appreciated"],
+  //9
   ["Bye", "Goodbye", "See you later"],
-  ["Sushi", "Pizza"],
+  //11
   ["Bro!"],
-  ["Great question"],
-  ["That's ok","I understand","What do you want to talk about?"],
-  ["Please say something :("],
-  ["Haha!","Good one!"]
+  //13
+  ["That's ok,I understand,Please Specify your problem so I can Help you more efficiently"],
+  //14
+  ["Please say something :("]
 ]
 
 // Random for any other user input
@@ -71,6 +65,6 @@ const alternative = [
   "I don't understand :/"
 ]
 
-// Whatever else you want :)
-
-const coronavirus = ["Please stay home", "Wear a mask", "Fortunately, I don't have COVID", "These are uncertain times"]
+const extra=[
+  "WELCOME To Sinhgad SE ERP website PDF will be on Study material section on nav bar,\n All documents present on notice board as well as study material section"
+]
